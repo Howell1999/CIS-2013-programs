@@ -24,18 +24,18 @@ var calculateIncome = function ()
     		else
     		{
     			floatTaxRate = "20";
-            }
+            	}
         }
     }
     else
     {
-    	{
+    	
     	if (intAnnualIncome < 30000)
     	{
     		floatTaxRate = "5";
     	}
         else
-   		{
+	{
             if (intAnnualIncome >= 30000 || intAnnualIncome <= 75000)
             {
    			floatTaxRate = "10";
@@ -45,8 +45,8 @@ var calculateIncome = function ()
                 floatTaxRate = "20";
             }
         }
-	}
-}
+    }
+ }
 
 	floatAnnualTax = intAnnualIncome * (floatTaxRate/100);
 

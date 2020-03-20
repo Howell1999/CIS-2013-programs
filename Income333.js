@@ -50,7 +50,7 @@ var calculateIncome = function ()
 
 	floatAnnualTax = intAnnualIncome * (floatTaxRate/100);
 
-	 floatAnunalTax=$("annualTax");
+	  $("annualTax").value=floatAnnualTax;
 
 
 	alert ("Your annual income tax this year is $" + floatAnnualTax  +"\nBased upon an annual income of $"+ intAnnualIncome+
@@ -65,5 +65,5 @@ window.onload = function ()
     $("annualTax").value = "";
     $("calculate").onclick = calculateIncome;
     $("annualIncome").focus();
-    $("annualTax").value=floatAnnualTax;
+   
 };
